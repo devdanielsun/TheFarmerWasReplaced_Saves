@@ -43,7 +43,7 @@ def try_harvest():
 			and
 			get_pos_y() == pumpkin_size()-1
 			and
-			good_pumpkins_found == pumpkin_size() * pumpkin_size()):
+			good_pumpkins_found == pumpkin_size()**2):
 			harvest()
 	elif get_entity_type() == Entities.Sunflower:
 		# TODO: harvest all sunflowers by creating a sorted list with biggest to smallest measure() + x,y
