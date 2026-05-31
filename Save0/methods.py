@@ -55,7 +55,9 @@ def try_harvest():
 		use_item(Items.Fertilizer)
 	else:
 		harvest()
-	
+
+	# Move to the biggest measured Sunflower and harvest
+	# TODO: replace with list of sorted measured sunflowers
 	if get_pos_x() == get_world_size()-1 and get_pos_y() == get_world_size()-1:
 		x, y = position_sunflower
 		while get_pos_x() > x:
